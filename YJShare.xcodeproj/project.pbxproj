@@ -112,6 +112,11 @@
 		9360C50616DB4B18008E44DA /* ILPWormwood.m in Sources */ = {isa = PBXBuildFile; fileRef = 9360C4FC16DB4B18008E44DA /* ILPWormwood.m */; };
 		9360C50C16DB4D56008E44DA /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9360C50B16DB4D56008E44DA /* NSDictionary+Extension.m */; };
 		936AFB60172E5FAC00EA0B13 /* NSArray+help.m in Sources */ = {isa = PBXBuildFile; fileRef = 936AFB5F172E5FAC00EA0B13 /* NSArray+help.m */; };
+		93B56C5A17BB2A3100B9F6BA /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B56C5317BB2A3100B9F6BA /* MMDrawerBarButtonItem.m */; };
+		93B56C5B17BB2A3100B9F6BA /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B56C5517BB2A3100B9F6BA /* MMDrawerController.m */; };
+		93B56C5C17BB2A3100B9F6BA /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B56C5717BB2A3100B9F6BA /* MMDrawerVisualState.m */; };
+		93B56C5D17BB2A3100B9F6BA /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B56C5917BB2A3100B9F6BA /* UIViewController+MMDrawerController.m */; };
+		93B56C6217BB2B7100B9F6BA /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B56C6017BB2B7100B9F6BA /* OpenUDID.m */; };
 		93FD9F2E176427AB00041594 /* GetIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FD9F2D176427AB00041594 /* GetIPAddress.m */; };
 /* End PBXBuildFile section */
 
@@ -332,6 +337,17 @@
 		9360C50B16DB4D56008E44DA /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		936AFB5E172E5FAC00EA0B13 /* NSArray+help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+help.h"; sourceTree = "<group>"; };
 		936AFB5F172E5FAC00EA0B13 /* NSArray+help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+help.m"; sourceTree = "<group>"; };
+		93B56C5217BB2A3100B9F6BA /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		93B56C5317BB2A3100B9F6BA /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		93B56C5417BB2A3100B9F6BA /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		93B56C5517BB2A3100B9F6BA /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		93B56C5617BB2A3100B9F6BA /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		93B56C5717BB2A3100B9F6BA /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		93B56C5817BB2A3100B9F6BA /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		93B56C5917BB2A3100B9F6BA /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		93B56C5F17BB2B7100B9F6BA /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		93B56C6017BB2B7100B9F6BA /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		93B56C6117BB2B7100B9F6BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		93FD9F2C176427AB00041594 /* GetIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIPAddress.h; sourceTree = "<group>"; };
 		93FD9F2D176427AB00041594 /* GetIPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIPAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -503,6 +519,7 @@
 		9360C3D716DB2D18008E44DA /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				93B56C5E17BB2B6200B9F6BA /* OpenUDID */,
 				936AFB5D172E5FA300EA0B13 /* NSArray */,
 				9330588116FC017700A42AB8 /* ViewController */,
 				9322CD8A16F2F66700CACF6A /* StatusBar */,
@@ -537,6 +554,7 @@
 		9360C3E216DB2F19008E44DA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				93B56C5117BB29D800B9F6BA /* MMDrawerController */,
 				931023EF177ABA3A0038D23E /* CustomCenterTab */,
 				933E5C6116DD8DAA00A6C216 /* HUD */,
 				9360C4E316DB4580008E44DA /* RefreshTable */,
@@ -885,6 +903,31 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		93B56C5117BB29D800B9F6BA /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				93B56C5217BB2A3100B9F6BA /* MMDrawerBarButtonItem.h */,
+				93B56C5317BB2A3100B9F6BA /* MMDrawerBarButtonItem.m */,
+				93B56C5417BB2A3100B9F6BA /* MMDrawerController.h */,
+				93B56C5517BB2A3100B9F6BA /* MMDrawerController.m */,
+				93B56C5617BB2A3100B9F6BA /* MMDrawerVisualState.h */,
+				93B56C5717BB2A3100B9F6BA /* MMDrawerVisualState.m */,
+				93B56C5817BB2A3100B9F6BA /* UIViewController+MMDrawerController.h */,
+				93B56C5917BB2A3100B9F6BA /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		93B56C5E17BB2B6200B9F6BA /* OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				93B56C5F17BB2B7100B9F6BA /* OpenUDID.h */,
+				93B56C6017BB2B7100B9F6BA /* OpenUDID.m */,
+				93B56C6117BB2B7100B9F6BA /* README.md */,
+			);
+			path = OpenUDID;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1020,6 +1063,11 @@
 				9330588016FC015600A42AB8 /* UIViewController+help.m in Sources */,
 				936AFB60172E5FAC00EA0B13 /* NSArray+help.m in Sources */,
 				93FD9F2E176427AB00041594 /* GetIPAddress.m in Sources */,
+				93B56C5A17BB2A3100B9F6BA /* MMDrawerBarButtonItem.m in Sources */,
+				93B56C5B17BB2A3100B9F6BA /* MMDrawerController.m in Sources */,
+				93B56C5C17BB2A3100B9F6BA /* MMDrawerVisualState.m in Sources */,
+				93B56C5D17BB2A3100B9F6BA /* UIViewController+MMDrawerController.m in Sources */,
+				93B56C6217BB2B7100B9F6BA /* OpenUDID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

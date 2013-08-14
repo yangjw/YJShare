@@ -6,3 +6,9 @@
      #import <Foundation/Foundation.h>
      #import <UIKit/UIKit.h>
 #endif
+
+#ifdef DEBUG
+#define NSLog(...) do {printf("%s[LINE %u]: \n",__func__,__LINE__);NSLog(__VA_ARGS__);} while(0)
+#else
+#define NSLog(...) do {} while (0)
+#endif
