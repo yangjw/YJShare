@@ -16,8 +16,6 @@
 #define IS_IPAD (false)
 #endif
 
-#define mapKey @"356F049BC42F637405C0C27232BE3B1E76B9C222"
-
 #define IS_CONNECTED_NETWORK [UIDevice connectedToNetwork]
 #define IS_CONNECTED_WIFI [UIDevice connectedToWiFi]
 
@@ -26,9 +24,9 @@
 #define SGLogWarning FMLoggerWarning
 #define SGLogError FMLoggerError
 
-#define ccr(t,l,w,h) CGRectMake(t,l,w,h)
-#define ccp(x,y) CGPointMake(x,y)
-#define ccs(w,h) CGSizeMake(w,h)
+#define crm(t,l,w,h) CGRectMake(t,l,w,h)
+#define cpm(x,y) CGPointMake(x,y)
+#define csm(w,h) CGSizeMake(w,h)
 #define ccei(t,l,b,r) UIEdgeInsetsMake(t,l,b,r)
 
 #define ON_BN_CLICKED(button,sel) [button addTarget:self action:@selector(sel) forControlEvents:UIControlEventTouchUpInside]

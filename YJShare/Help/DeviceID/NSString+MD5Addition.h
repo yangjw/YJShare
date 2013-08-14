@@ -10,6 +10,10 @@
 
 @interface NSString(MD5Addition)
 
+/**
+	MD5 加密
+	@returns 返回字符串
+ */
 - (NSString *) stringFromMD5;
 
 @end

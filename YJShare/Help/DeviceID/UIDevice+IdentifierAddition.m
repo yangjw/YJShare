@@ -8,6 +8,7 @@
 
 #import "UIDevice+IdentifierAddition.h"
 #import "NSString+MD5Addition.h"
+#import "GetIPAddress.h"
 
 #include <sys/socket.h> // Per msqr
 #include <sys/sysctl.h>
@@ -94,6 +95,15 @@
     NSString *uniqueIdentifier = [macaddress stringFromMD5];
     
     return uniqueIdentifier;
+}
+
+
+- (NSString *)getWifiIpAddress
+{
+	 InitAddresses();
+	 GetIPAddresses();
+	 GetHWAddresses();
+	return [NSString stringWithFormat:@"%s",ip_names[1]];
 }
 
 @end

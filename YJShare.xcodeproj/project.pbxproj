@@ -112,6 +112,7 @@
 		9360C50616DB4B18008E44DA /* ILPWormwood.m in Sources */ = {isa = PBXBuildFile; fileRef = 9360C4FC16DB4B18008E44DA /* ILPWormwood.m */; };
 		9360C50C16DB4D56008E44DA /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9360C50B16DB4D56008E44DA /* NSDictionary+Extension.m */; };
 		936AFB60172E5FAC00EA0B13 /* NSArray+help.m in Sources */ = {isa = PBXBuildFile; fileRef = 936AFB5F172E5FAC00EA0B13 /* NSArray+help.m */; };
+		93FD9F2E176427AB00041594 /* GetIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FD9F2D176427AB00041594 /* GetIPAddress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -331,6 +332,8 @@
 		9360C50B16DB4D56008E44DA /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		936AFB5E172E5FAC00EA0B13 /* NSArray+help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+help.h"; sourceTree = "<group>"; };
 		936AFB5F172E5FAC00EA0B13 /* NSArray+help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+help.m"; sourceTree = "<group>"; };
+		93FD9F2C176427AB00041594 /* GetIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIPAddress.h; sourceTree = "<group>"; };
+		93FD9F2D176427AB00041594 /* GetIPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIPAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +376,13 @@
 				930BDEA016F1C227001928A5 /* SoundEffect.m */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		931023EF177ABA3A0038D23E /* CustomCenterTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCenterTab;
 			sourceTree = "<group>";
 		};
 		9322CD8A16F2F66700CACF6A /* StatusBar */ = {
@@ -527,6 +537,7 @@
 		9360C3E216DB2F19008E44DA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				931023EF177ABA3A0038D23E /* CustomCenterTab */,
 				933E5C6116DD8DAA00A6C216 /* HUD */,
 				9360C4E316DB4580008E44DA /* RefreshTable */,
 				9360C4B116DB3D1C008E44DA /* Toast */,
@@ -771,6 +782,8 @@
 		9360C4B516DB3D41008E44DA /* DeviceID */ = {
 			isa = PBXGroup;
 			children = (
+				93FD9F2C176427AB00041594 /* GetIPAddress.h */,
+				93FD9F2D176427AB00041594 /* GetIPAddress.m */,
 				9360C4B616DB3D4B008E44DA /* NSString+MD5Addition.h */,
 				9360C4B716DB3D4B008E44DA /* NSString+MD5Addition.m */,
 				9360C4B816DB3D4B008E44DA /* UIDevice+IdentifierAddition.h */,
@@ -1006,6 +1019,7 @@
 				9322CD8D16F2F66F00CACF6A /* MTStatusBarOverlay.m in Sources */,
 				9330588016FC015600A42AB8 /* UIViewController+help.m in Sources */,
 				936AFB60172E5FAC00EA0B13 /* NSArray+help.m in Sources */,
+				93FD9F2E176427AB00041594 /* GetIPAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

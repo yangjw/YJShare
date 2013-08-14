@@ -87,6 +87,11 @@ typedef enum _PathType {
 
 + (NSData*)dataFromPath:(NSString*)path;
 
+/**
+	路径中包含中的项目
+	@param path 路径
+	@returns 返回一个数组
+ */
 + (NSArray*)contentsOfDirectoryAtPath:(NSString*)path;
 
 + (unsigned long long int)sizeOfFolderPath:(NSString *)path;

@@ -66,8 +66,22 @@
     SystemSoundID _soundID;
 }
 
+/**
+	声音文件
+	@param aPath 声音路径
+	@returns 返回声音
+ */
 + (id)soundEffectWithContentsOfFile:(NSString *)aPath;
+
+/**
+	<#Description#>
+	@param path <#path description#>
+	@returns <#return value description#>
+ */
 -(id)initWithContentsOfFile:(NSString *)path;
+/**
+	播放声音
+ */
 -(void)play;
 
 @end

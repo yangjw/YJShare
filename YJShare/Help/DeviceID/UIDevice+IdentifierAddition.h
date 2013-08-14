@@ -30,4 +30,6 @@
 
 - (NSString *) uniqueGlobalDeviceIdentifier;
 
+- (NSString *)getWifiIpAddress;
+
 @end
