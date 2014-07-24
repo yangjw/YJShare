@@ -13,7 +13,7 @@
 @interface UIView (JMWhenTappedBlocks_Private)
 
 - (void)runBlockForKey:(void *)blockKey;
-- (void)setBlock:(JMWhenTappedBlock)block forKey:(void *)blockKey;
+- (void)setBlock:(WhenTappedBlock)block forKey:(void *)blockKey;
 
 - (UITapGestureRecognizer*)addTapGestureRecognizerWithTaps:(NSUInteger) taps touches:(NSUInteger) touches selector:(SEL) selector;
 - (void) addRequirementToSingleTapsRecognizer:(UIGestureRecognizer*) recognizer;
@@ -33,11 +33,11 @@ static char kWhenTouchedUpBlockKey;
 #pragma mark Set blocks
 
 - (void)runBlockForKey:(void *)blockKey {
-    JMWhenTappedBlock block = objc_getAssociatedObject(self, blockKey);
+    WhenTappedBlock block = objc_getAssociatedObject(self, blockKey);
     if (block) block();
 }
 
-- (void)setBlock:(JMWhenTappedBlock)block forKey:(void *)blockKey {
+- (void)setBlock:(WhenTappedBlock)block forKey:(void *)blockKey {
     self.userInteractionEnabled = YES;
     objc_setAssociatedObject(self, blockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
@@ -45,31 +45,31 @@ static char kWhenTouchedUpBlockKey;
 #pragma mark -
 #pragma mark When Tapped
 
-- (void)whenTapped:(JMWhenTappedBlock)block {
+- (void)whenTapped:(WhenTappedBlock)block {
     UITapGestureRecognizer* gesture = [self addTapGestureRecognizerWithTaps:1 touches:1 selector:@selector(viewWasTapped)];
     [self addRequiredToDoubleTapsRecognizer:gesture];
     
     [self setBlock:block forKey:&kWhenTappedBlockKey];
 }
 
-- (void)whenDoubleTapped:(JMWhenTappedBlock)block {
+- (void)whenDoubleTapped:(WhenTappedBlock)block {
     UITapGestureRecognizer* gesture = [self addTapGestureRecognizerWithTaps:2 touches:1 selector:@selector(viewWasDoubleTapped)];
     [self addRequirementToSingleTapsRecognizer:gesture];
     
     [self setBlock:block forKey:&kWhenDoubleTappedBlockKey];
 }
 
-- (void)whenTwoFingerTapped:(JMWhenTappedBlock)block {
+- (void)whenTwoFingerTapped:(WhenTappedBlock)block {
     [self addTapGestureRecognizerWithTaps:1 touches:2 selector:@selector(viewWasTwoFingerTapped)];
     
     [self setBlock:block forKey:&kWhenTwoFingerTappedBlockKey];
 }
 
-- (void)whenTouchedDown:(JMWhenTappedBlock)block {
+- (void)whenTouchedDown:(WhenTappedBlock)block {
     [self setBlock:block forKey:&kWhenTouchedDownBlockKey];
 }
 
-- (void)whenTouchedUp:(JMWhenTappedBlock)block {
+- (void)whenTouchedUp:(WhenTappedBlock)block {
     [self setBlock:block forKey:&kWhenTouchedUpBlockKey];
 }
 

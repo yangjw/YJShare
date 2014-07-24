@@ -41,6 +41,12 @@
 	@returns array
  */
 - (NSArray *)lowerCaseSoreteArray:(NSArray *)array asc:(BOOL)asc;
-
-
+/**
+ *  是否为空
+ *
+ *  @param index
+ *
+ *  @return 
+ */
+- (id)verifiedObjectAtIndex:(NSUInteger)index;
 @end

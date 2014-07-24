@@ -9,15 +9,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^JMWhenTappedBlock)();
+typedef void (^WhenTappedBlock)();
 
 @interface UIView (JMWhenTappedBlocks) <UIGestureRecognizerDelegate>
 
-- (void)whenTapped:(JMWhenTappedBlock)block;
-- (void)whenDoubleTapped:(JMWhenTappedBlock)block;
-- (void)whenTwoFingerTapped:(JMWhenTappedBlock)block;
-- (void)whenTouchedDown:(JMWhenTappedBlock)block;
-- (void)whenTouchedUp:(JMWhenTappedBlock)block;
+- (void)whenTapped:(WhenTappedBlock)block;
+- (void)whenDoubleTapped:(WhenTappedBlock)block;
+- (void)whenTwoFingerTapped:(WhenTappedBlock)block;
+- (void)whenTouchedDown:(WhenTappedBlock)block;
+- (void)whenTouchedUp:(WhenTappedBlock)block;
 
 @end
 

@@ -11,5 +11,5 @@
 	@returns 值
  */
 - (NSString *)stringForKey:(NSString *)key;
-
+- (id)verifiedObjectForKey:(id)aKey;
 @end

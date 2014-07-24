@@ -58,5 +58,9 @@
      return myary;
 }
 
-
+- (id)verifiedObjectAtIndex:(NSUInteger)index
+{
+    if ([self objectAtIndex:index] && ![[self objectAtIndex:index] isKindOfClass:[NSNull class]]) return [self objectAtIndex:index];
+    return nil;
+}
 @end
