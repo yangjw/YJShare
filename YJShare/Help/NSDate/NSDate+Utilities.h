@@ -62,7 +62,21 @@
 - (NSDate *) dateAtStartOfDay;
 
 // Retrieving intervals
+/**
+ *  时间差(分钟)
+ *
+ *  @param aDate 之前时间差
+ *
+ *  @return 差值
+ */
 - (NSInteger) minutesAfterDate: (NSDate *) aDate;
+/**
+ *  <#Description#>
+ *
+ *  @param aDate <#aDate description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger) minutesBeforeDate: (NSDate *) aDate;
 - (NSInteger) hoursAfterDate: (NSDate *) aDate;
 - (NSInteger) hoursBeforeDate: (NSDate *) aDate;

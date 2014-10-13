@@ -15,7 +15,9 @@
 @interface FileUtil : NSObject {
 
 }
-
+/**
+ 文件路径
+ */
 typedef enum _PathType {
 	PathTypeLibrary,
 	PathTypeDocument,
@@ -93,9 +95,21 @@ typedef enum _PathType {
 	@returns 返回一个数组
  */
 + (NSArray*)contentsOfDirectoryAtPath:(NSString*)path;
-
+/**
+ *  返回文件中大小
+ *
+ *  @param path 路径
+ *
+ *  @return 文件大小
+ */
 + (unsigned long long int)sizeOfFolderPath:(NSString *)path;
-
+/**
+ *  不要备份文件
+ *
+ *  @param path 路径
+ *
+ *  @return 是否成功
+ */
 + (BOOL)skipBackupAtPath:(NSString*)path;
 
 
